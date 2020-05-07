@@ -1,0 +1,43 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: auto auto 340px;
+    padding: 0 15px;
+    background-color: #286090;
+    color: #fff;
+    box-shadow: #888888 0px 0px 18px 2px;
+    font-size: 16px;
+    h1{
+        margin: 15px 0px;
+        font-size: 30px;
+    }
+    & > * {
+        & > a {
+            display: inline-block;
+            padding: 20px 15px;
+            color: #fff !important;
+            text-decoration: none !important;
+            &:hover {
+                background-color: #2d7abe;
+            }
+            .glyphicon {
+                padding-right: 5px;
+                vertical-align: text-top;
+            }
+        }
+    }
+    .search-input {
+        font-size: 16px;
+        margin: 10px 15px;
+        height: calc(100% - 20px);
+        width: calc(100% - 15px);
+    }
+    .hamburger {
+        padding: 20px 0;
+        font-size: 20px;
+    }
+}
